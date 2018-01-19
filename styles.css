@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Concert+One|Open+Sans|Oswald');
 .bar-item {
     display: inline;
     float: left;
@@ -12,11 +13,10 @@
     text-decoration: none;
     text-align: center;
     margin: 0 2.5 0 2.5;
-    
 }
 
 .bar-link:hover {
-    background-color: #6783d1;
+    background-color: #6783d1;  
 }
 
 #active-page {
@@ -26,7 +26,9 @@ h1 {
     text-align: center;
 }
 h2 {
-    font-weight: normal;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+    color: #3b5bb2;
 }
 
 body {
@@ -49,16 +51,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-
-/*
-img {
-    max-width: 350px;
-    width: 50%;
-}
-*/
-
-
-
 .open-ssd-img {
    max-width: 350px;
     width: 50%;
@@ -78,4 +70,67 @@ img {
 .s-v-h-graph-img {
     width: 50%;
     max-width: 400px;
+}
+
+
+
+.s-v-h-vs-img {
+    width: 60%;
+    max-width: 600px;
+    padding: 0;
+    margin: 0;
+}
+
+#img-cap-cont {
+    display: block;
+    position: relative;
+    
+}
+
+.img-caption {
+    position: absolute;
+    left: 350px;
+    float: left;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.calc-info {
+    color: gray;
+    font-size: 10px;
+    margin-top: 0;
+}
+
+.speed-calc-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1.2em;
+}
+.speed-calc-table tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.speed-calc-table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.speed-calc-table th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+    padding: 12px;
+    background-color: #3b5bb2;
+    color: white;
+}
+
+.s-c-t-lm-c {
+    font-size: 0.75em;
+    
+}
+
+.s-c-input, .s-c-d-menu, .s-c-button {
+    font-size: 1em;
+    
 }

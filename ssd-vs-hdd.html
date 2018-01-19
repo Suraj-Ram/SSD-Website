@@ -4,6 +4,8 @@
         <script src="scripts/jquery-3.2.1.min.js"></script>
         <title>SSD: SSD v. HDD</title>
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <script src="scripts/main.js">
+        </script>
     </head>
     <body>
         <div class="page-title-cont">
@@ -23,24 +25,51 @@
         <br>
         
         <h1>SSD vs. HDD</h1>
-<!--
-        <div class="s-v-h-img-cont">
-            <img src="images/hdd.jpg">
-            <img src="images/ssd2.jpg" style="transform: rotate(90deg);">
-        </div>
--->
+        <center><img src="images/vs-img.jpg" class="s-v-h-vs-img"></center>
         
         <h2>Speed</h2>
         <p>A PC with an SSD will boot in less than a minute sometimes even only 10 seconds. This is because a hard drive requires time to spin up to the operating speed. When a computer is in the “sleep” state the disk is not spinning and when the user wakes up the computer the motor will have to spin up again, thus resulting in slow wake up times. As SSDs run much faster launching and running applications will be much faster. Since, read and write speeds are faster than a traditional HDD opening and transfering files will be faster. SSDs are good for the little data transactions that happens all the time inside of an operating system. For example; When you open an application or game the app/game has to go around searching for a bunch of little files. In this case the SSD will be much faster as it can retrieve files much faster. This will improve the system responsiveness of any system equipped with an SSD.
         </p>
         <img src="images/s-v-h-graph.png" class="s-v-h-graph-img">
-        <p>According to the grah, you can see that loading games on an SSD is much faster than a HDD. Espaccially when it comes to big games with lots of files like Battlefield 3.</p>
-        
-        
+        <p>According to the graph, you can see that loading games on an SSD is much faster than a HDD. Especially when it comes to big games with lots of files like Battlefield 3.</p>
+        <!--Calculator-->
+        <div id="speed-calculator-cont">
+            
+            <input type="number" id="sizeInputBox" class="s-c-input">
+            <select id="unit" class="s-c-d-menu">
+                <option value="TB">TB</option>
+                <option value="GB" selected="selected">GB</option>
+                <option value="MB">MB</option>
+                <option value="KB">KB</option>
+            </select>
+            <input type="button" value="Calculate" onclick="calculateSpeed()" class="s-c-button">
+            
+            <p class="calc-info">Note: Calculations are done in the binary form</p>
+            
+            <table class="speed-calc-table">
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <th>SSD</th>
+                        <th>HDD</th>
+                    </tr>
+                    <tr>
+                        <td class="s-c-t-lm-c">Time taken to read the file</td>
+                        <td id="ssdRDisp"> </td>
+                        <td id="hddRDisp"> </td>
+                    </tr>
+                    <tr>
+                        <td class="s-c-t-lm-c">Time taken to write the file</td>
+                        <td id="ssdWDisp"> </td>
+                        <td id="hddWDisp"> </td>
+                    </tr>
+                </tbody>
+            </table>            
+        </div>
         
         <h2>Price</h2>
         <p>
-            For a $160 you can get a 256GB SSD if you favour speed more than storage capacity, ot you can get a 4TB hard drive if you more concerned about the storage capacity and not much about speed of acessing the data.
+            For $160 you can get a 256GB SSD if you favour speed more than storage capacity, or you can get a 4TB hard drive if you more concerned about the storage capacity and not much about speed of acessing the data.
         
         </p>
         
@@ -51,6 +80,9 @@
         
         <h2>Durability</h2>
         <p>As SSDs have no moving parts they are inevitably more durable are are more likely to keep the data stored in case the device gets dropped or is subjected to sudden impact. SSDs also last longer that HDDs because there are no moving parts and there is nothing to wear out.</p>
+        
+        <h2>More Info.</h2>
+        <iframe class="yt-video" width="560" height="315" src="https://www.youtube.com/embed/YQEjGKYXjw8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         
         
     </body>
