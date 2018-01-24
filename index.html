@@ -4,9 +4,18 @@
         <script src="scripts/jquery-3.2.1.min.js"></script>
         <title>SSD: General Info.</title>
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <script>
+            function fontChange() {
+                document.getElementById("mainBody").style.fontFamily = "Comic Sans MS";
+                document.getElementById("mainBody").style.fontFamily = "Comic Sans MS";
+                document.getElementById("mainBody").style.fontFamily = "Comic Sans MS";
+            }
+        
+            
+        </script>
         
     </head>
-    <body>
+    <body id="mainBody">
         <div class="page-title-cont">
             <h1 class="page-title">SSD: Solid State Drive</h1>
         
@@ -22,9 +31,11 @@
             </div>
         <br>
         <br>
+        
+        
         <div>
-
             <h1>General Info</h1>
+            
             <h2>How the SSD works</h2>
             <p>To start, SSD stands for soild state drive. The SSD is the newest and fastest standard consumer storage drive. When you get to a basic level an SSD is just a circuit with some flash chips, controller chip, and a connector so it can talk to the motherboard. SSD's, unlike hard disk drives (HDD), have no spinning platter or actuator arm. Thats why, its "solid".</p>
             <p></p>
@@ -37,9 +48,12 @@
             
             </div>
             
-            <h2>The price</h2>
+            <h2>The SSD Market</h2>
+            <p>Right now in 2018 the market is worth $26.47 billion and experts are saying that by 2023 it will nearly triple as it will go up to $60.22 billion this massive increase is due to nearly all data centers and servers using solid state drives instead of their mechanical counterparts. The major players in the SSD market now are Samsung, Intel, Western Digital, Micron, and Toshiba. The market for PCIe SSDs is also expected to grow over the years as more and more users demand super-fast speed, low-latency and high performance. </p>
+            
+            <h2>The Price</h2>
             <p>
-                The thick black lines represent the average price of a 500GB SSD, the thin blue lines show the price of each model. <a href="https://pcpartpicker.com/trends/price/internal-hard-drive/#storage.0.512000">More info.</a>
+                The thicc black lines represent the average price of a 500GB SSD, the thin blue lines show the price of each model. <a href="https://pcpartpicker.com/trends/price/internal-hard-drive/#storage.0.512000">More info.</a>
             </p>
             <p>
                 <em style="color: gray; font-size: 11px; margin-top: 0; padding-top: 0;">Source: PC Part Picker. Pricing data includes promos, coupons, rebates, and shipping costs (when available)</em>
@@ -47,8 +61,36 @@
             <img src="images/price-graph.png" class="price-graph">
             
             
-            <h2>Inside an SSD</h2>
+            <h2 onclick="fontChange()">Inside an SSD</h2>
+<!--            <img src="images/inside-diagram.jpg" class="open-ssd-img">-->
+            
+            <div id="img-cap-cont">
+                <img src="images/inside-diagram.jpg" class="open-ssd-img" style="max-width: 400px">
+                <ol class="img-caption" style="left: 450px;">
+                    <li><p><strong>Top cover: </strong>Keeps the SSD’s PCB and chips protected</li>
+                    <li><p><strong>Interface Connector: </strong>The connector it uses to communicate with the motherboard and the SATA controller</li>
+                    <li><p><strong>Cache chip: </strong>Stores where each piece of data is on the SSD and tells the controller chip where it is</li>
+                    <li><p><strong>Controller chip: </strong>This the the main processing unit for the SSD it handles the managing of data, moving it around to create space for new data, and erasing data</li>
+                    <li><p><strong>NAND memory chips: </strong>The silicon chip that the data is stored in</li>
+                    <li><p><strong>Logic Board: </strong>The printed circuit board (PCB) that all the chips and connectors are soldered to</li>
+                    <li><p><strong>Bottom cover: </strong>Protects the bottom of the PCB and provides screw holes that are required to mount them</li>
+                
+                
+                </ol>
+            </div>
+            
             
         </div>
+        
+        
+        <br>
+<!--
+        <div id="footer" style="position: inherit;">
+            <p>© 2018 Suraj</p>
+            <a href="https://github.com/SurajBlue/SSD-Website" target="_blank">Link to Code</a>
+        </div>
+-->
+        
+        
     </body>
 </html>

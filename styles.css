@@ -13,6 +13,7 @@
     text-decoration: none;
     text-align: center;
     margin: 0 2.5 0 2.5;
+    border-radius: 5px;
 }
 
 .bar-link:hover {
@@ -24,6 +25,7 @@
 }
 h1 {
     text-align: center;
+    font-family: 'Bree Serif', serif;
 }
 h2 {
     font-weight: bold;
@@ -134,3 +136,24 @@ ul {
     font-size: 1em;
     
 }
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: dimgray;
+    text-align: center;
+    font-size: 10px;
+}
+#footer p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#footer a {
+    color: dimgray;
+    margin-top: 3px;
+    padding-top: 0;
+}
+
