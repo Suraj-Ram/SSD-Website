@@ -144,16 +144,38 @@ ul {
     background-color: lightgray;
     color: dimgray;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
+    clear: both;
 }
-#footer p {
-    margin-bottom: 0;
+    
+.footer-link {
+/*    color: #3b5bb2;*/
+    color: dimgray;
+    padding: 10px 20px;
+    font-size: 12px;
     padding-bottom: 0;
+    margin-bottom: 0;
+}
+.footer-link:hover {
+    color: #6783d1;
 }
 
-#footer a {
+
+.copyright {
+    font-size: 12px;
+    padding-top: 1px;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+.code-link {
     color: dimgray;
-    margin-top: 3px;
+    text-decoration: underline;
+}
+.code-link:hover {
+    color: #6783d1;
+}
+
+.footer-desc {
+    margin-top: 1px;
     padding-top: 0;
 }
-
